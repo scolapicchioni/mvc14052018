@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AjaxDemo</title>
+</head>
+<body>
+    <div> 
+        @Ajax.ActionLink("Click here to asynchronously call an action", "AjaxAction",new AjaxOptions() {OnComplete="myFunction"})
+
+        @using (Ajax.BeginForm("create", new AjaxOptions() { }))
+        {   
+            <input type="submit" />
+        }
+    </div>
+
+    <div id="myDiv1">
+
+    </div>
+
+    <script >
+        function myFunction(data) {
+
+        }
+    </script>
+</body>
+</html>

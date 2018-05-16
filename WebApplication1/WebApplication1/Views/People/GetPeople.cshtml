@@ -1,0 +1,30 @@
+﻿@using WebApplication1.Models
+@model List<Person>
+
+<a href="people/create" lang="nl" draggable="true" class="btn btn-link">Click here</a>
+@Html.ActionLink("Click here", "Create", null, new { lang = "nl", draggable = "true", @class = "btn btn-link" })
+
+<a href="@Url.Action("Create")" lang="nl" draggable="true" class="btn btn-link">Click here</a>
+
+
+@*<a asp-action="Create" asp-controller="People" lang="nl" draggable="true" class="btn btn-link">Click here</a>*@
+
+
+
+<div>
+    @foreach (var item in Model)
+    {
+    <div>
+
+        <a href="@Url.Action("Update", new { id = item.Id})">Edit</a>
+        @Html.ActionLink("Edit", "Update", new { id = item.Id }, new { lang = "nl", draggable = "true", @class = "btn btn-link" })
+
+
+        <a href="@Url.Action("Delete", new { id = item.Id})">Delete</a>
+
+
+
+        @item.Name @item.Surname @item.Age
+    </div>
+    }
+</div>

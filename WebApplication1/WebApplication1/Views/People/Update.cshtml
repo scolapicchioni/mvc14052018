@@ -1,0 +1,24 @@
+﻿@using WebApplication1.Models
+@model Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/people/update">
+            //listbox
+            
+            @Html.Partial("_CreateEditPartial")
+            <input type="submit" value="Click here to update the person" />
+        </form>
+    </div>
+</body>
+</html>

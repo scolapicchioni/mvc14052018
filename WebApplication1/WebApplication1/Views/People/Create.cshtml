@@ -1,0 +1,26 @@
+﻿@using WebApplication1.Models
+@model Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/people/create">
+            @Html.Partial("_CreateEditPartial")
+
+
+            @Html.Action("MyListBox")
+
+            <input type="submit" value="Click here to create a new person" />
+        </form>
+    </div>
+</body>
+</html>

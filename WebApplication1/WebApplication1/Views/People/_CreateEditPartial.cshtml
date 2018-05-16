@@ -1,0 +1,13 @@
+﻿@using WebApplication1.Models
+@model Person
+
+<div>@Html.DisplayNameFor(p => p.Id): @Html.EditorFor(p => p.Id) @Html.ValidationMessageFor(p => p.Id)</div>
+<div>
+    Name: @Html.EditorFor(p => p.Name) @Html.ValidationMessageFor(p => p.Name)
+</div>
+<div>
+    Surname: @Html.EditorFor(p => p.Surname) @Html.ValidationMessageFor(p => p.Surname)
+</div>
+<div>
+    Age: @Html.EditorFor(p => p.Age) @Html.ValidationMessageFor(p => p.Age)
+</div>

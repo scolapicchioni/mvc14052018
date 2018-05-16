@@ -1,0 +1,31 @@
+﻿@using WebApplication1.Models
+@model Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetPerson</title>
+</head>
+<body>
+    <div> 
+        <dl>
+            <dt>Id</dt>
+            <dd>@Model.Id</dd>
+
+            <dt>Name</dt>
+            <dd>@Model.Name</dd>
+
+            <dt>Surname</dt>
+            <dd>@Model.Surname</dd>
+            
+            <dt>Age</dt>
+            <dd>@Model.Age</dd>
+        </dl>
+    </div>
+</body>
+</html>
