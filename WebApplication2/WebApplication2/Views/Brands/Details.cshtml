@@ -1,0 +1,55 @@
+﻿@model WebApplication2.Models.Brand
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Brand</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<div id="cars">
+
+</div>
+
+<input type="text" id="new-car-name" placeholder="name" />
+<input type="text" id="new-car-price" placeholder="price" />
+<button id="add-car">Add Car</button>
+
+<template id="car-template">
+    <article class="row">
+        <div class="car-name col-md-6"></div>
+        <div class="car-price col-md-6"></div>
+    </article>
+</template>
+
+@section scripts{
+    <script type="module">
+        import ViewModel from '/Scripts/viewmodel.js'
+        new ViewModel(@Model.Id)
+    </script>
+}
