@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.1.2.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script>
+        const simoHub = $.connection.simoHub;
+
+        simoHub.client.clientMethod = function (message) {
+            console.log("message from the server: " + message)
+            simoHub.server.serverMethod1("bla", 3);
+        };
+
+        $.connection.hub.start().done( function() {
+            simoHub.server.serverMethod1("bla", 3);
+        });
+    </script>
+</body>
+</html>
