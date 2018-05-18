@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationSecurity", "WebApplicationSecurity\WebApplicationSecurity.csproj", "{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		FirstCustomer|Any CPU = FirstCustomer|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}.FirstCustomer|Any CPU.ActiveCfg = FirstCustomer|Any CPU
+		{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}.FirstCustomer|Any CPU.Build.0 = FirstCustomer|Any CPU
+		{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F390233E-7B04-40A6-8971-C2DEEB1C4FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83B65A55-F59A-456D-BF35-7195D7A5664A}
+	EndGlobalSection
+EndGlobal
